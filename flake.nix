@@ -23,9 +23,8 @@
         nixosConfigurations."nixos" = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
             modules = [
-                /etc/nixos/hardware-configuration.nix
-                    ./modules/system/network.nix
-                    ./modules/system/yubikey.nix
+                ./hardware-configuration.nix
+                    ./modules/system/network.nix ./modules/system/yubikey.nix
                     ({ pkgs, ... }: {
                      nix.settings.experimental-features = [ "nix-command" "flakes" ];
                      boot.loader.systemd-boot.enable = true;
