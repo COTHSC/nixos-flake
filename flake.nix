@@ -118,6 +118,7 @@
              signal-desktop
              whatsapp-for-linux
              nchat
+             cowsay
              ];
 
              home = {
