@@ -80,6 +80,7 @@
                              papirus-icon-theme     # Popular icon theme
                              font-awesome          # Icons used by many status bars
                              nerdfonts            # Additional icons and symbols
+                             cowsay
                              ];
 
                      xdg.portal = {
